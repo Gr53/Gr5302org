@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+ 
   resources :transport_materials
   resources :visits
   resources :uses
@@ -13,5 +14,6 @@ Rails.application.routes.draw do
   resources :roles
   resources :material_types
   resources :multimedia_types
+  root to: "home#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
