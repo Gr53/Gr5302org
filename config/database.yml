@@ -20,14 +20,16 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: ec2-50-17-194-129.compute-1.amazonaws.com
+  username: vdbvisgqwoihlp
+  password: f00eb942fd74b46f5b6745a6a1844bb167de9fc232331617f179c8de8aca77cd
 
 development:
+  <<: *default
   adapter: postgresql
   encoding: UTF8
-  database: proyecto
-  pool: 5
-  username: postgres
-  password: 1234
+  database: dn1ohq8pmuhg0
+ 
 
   # Conectar en un socket TCP. Omitido por defecto ya que el cliente usa un
   # socket de dominio que no necesita configuración. Windows no tiene
@@ -50,15 +52,10 @@ development:
 test:
   adapter: postgresql
   encoding: UTF8
-  database: proyecto
-  pool: 5
-  username: postgres
-  password: 1234
+  database: 
+
 
 production:
   adapter: postgresql
   encoding: UTF8
-  database: proyecto
-  pool: 5
-  username: postgres
-  password: 1234
+  database: 
