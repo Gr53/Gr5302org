@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-  		render '<h1>hola como estas</h1>'
+  		render template: "home/index"
   end
 end
