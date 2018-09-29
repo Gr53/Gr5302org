@@ -79,8 +79,14 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-# production:
-#  <<: *default
-#  database: proyecto
-#  username: postgres
-#  password: <%= ENV['BACKEND_DATABASE_PASSWORD'] %>
+ production:
+  <<: *default
+  host: ec2-174-129-32-37.compute-1.amazonaws.com
+  adapter: postgresql
+  encoding: unicode
+  database: dmdk0lcegdfe3
+  pool: 5
+  username: vqnbndpokgtobz
+  password: fa6cebf1c933cdc8ebc12b59b39c126d4a7a34518388e4df8b3244b1bef013d8
+
+  
