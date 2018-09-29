@@ -1,0 +1,19 @@
+rails generate scaffold role name_role:string desc_role:string 
+rails generate scaffold user name_user:string  lastname_user:string tel_user:string address_user:string email_user:string password_digest age:string role:references
+
+rails generate scaffold material_type name_material_type:string desc_material_type:string
+rails generate scaffold material name_material:string desc_material:string id_material_type:integer material_type:references
+
+rails generate scaffold multimedia_type name_multimedia_type:string desc_multimedia_type:string
+rails generate scaffold multimedia name_multimedia:string desc_multimedia:string id_multimedia_type:integer multimedia_type:references
+
+rails generate scaffold recycling_center nam_recycling_center:string desc_recycling_center:string address_recycling_center:string tel_recycling_center:string web_recycling_center:string
+
+rails generate model platform name_platform:string desc_platform:string user:references multimedia:references
+
+rails generate model category name_category:string desc_category:string references:material referencies:multimedia 
+
+rails generate model use name_use:string desc_use:string references:user references:material
+
+rails generate model visit name_visit:string desc_visit:string date:date references:user references:recycling_center
+
