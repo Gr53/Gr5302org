@@ -15,16 +15,17 @@
 # gem 'pg'
 #
 default: &default
+  host: ec2-174-129-32-37.compute-1.amazonaws.com
   adapter: postgresql
   encoding: unicode
-  database: proyecto
+  database: dmdk0lcegdfe3
   pool: 5
-  username: postgres
-  password: 123456
+  username: vqnbndpokgtobz
+  password: fa6cebf1c933cdc8ebc12b59b39c126d4a7a34518388e4df8b3244b1bef013d8
 
 development:
   <<: *default
-  database: proyecto
+  
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,12 +81,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
  production:
-  host: ec2-174-129-32-37.compute-1.amazonaws.com
-  adapter: postgresql
-  encoding: unicode
-  database: dmdk0lcegdfe3
-  pool: 5
-  username: vqnbndpokgtobz
-  password: fa6cebf1c933cdc8ebc12b59b39c126d4a7a34518388e4df8b3244b1bef013d8
+  <<: *default
+  
 
   
