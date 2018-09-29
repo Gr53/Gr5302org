@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons start>
+      <button ion-button icon-only solid>
+        <ion-icon name="body"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Datos Personales Admin
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page14" style="background-color:#FFFFFF;">
+  <form id="datosPersonalesAdmin-form">
+    <ion-list id="datosPersonalesAdmin-list">
+      <ion-item id="datosPersonalesAdmin-name_user">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Nombres" name="name_user"></ion-input>
+      </ion-item>
+      <ion-item id="datosPersonalesAdmin-lastname_user">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Apellidos" name="lastname_user"></ion-input>
+      </ion-item>
+      <ion-item id="datosPersonalesAdmin-tel_user">
+        <ion-label></ion-label>
+        <ion-input type="tel" placeholder="Telefono" name="tel_user"></ion-input>
+      </ion-item>
+      <ion-item id="datosPersonalesAdmin-address_user">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Direccion" name="address_user"></ion-input>
+      </ion-item>
+      <ion-item id="datosPersonalesAdmin-age">
+        <ion-label></ion-label>
+        <ion-input type="number" placeholder="Edad" name="age"></ion-input>
+      </ion-item>
+      <ion-item id="datosPersonalesAdmin-email_user">
+        <ion-label></ion-label>
+        <ion-input type="email" placeholder="Correo" name="email_user"></ion-input>
+      </ion-item>
+      <ion-item id="datosPersonalesAdmin-password">
+        <ion-label></ion-label>
+        <ion-input type="password" placeholder="Clave" name="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div id="datosPersonalesAdmin-container">
+      <button id="datosPersonalesAdmin-button" ion-button color="danger" on-click="goToBienvenidoAdmin()">
+        Volver
+      </button>
+      <button id="datosPersonalesAdmin-button" ion-button color="leaf">
+        Modificar
+      </button>
+    </div>
+  </form>
+</ion-content>

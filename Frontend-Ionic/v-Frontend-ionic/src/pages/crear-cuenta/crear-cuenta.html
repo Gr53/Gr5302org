@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Crear cuenta
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page8">
+  <form id="crearCuenta">
+    <ion-list id="crearCuenta-users">
+      <ion-item id="crearCuenta-name">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Nombres" name="name_user" required=""></ion-input>
+      </ion-item>
+      <ion-item id="crearCuenta-lastname">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Apellidos" name="lastname_user" required=""></ion-input>
+      </ion-item>
+      <ion-item id="crearCuenta-tel">
+        <ion-label></ion-label>
+        <ion-input type="tel" placeholder="Telefono" name="tel_user" required=""></ion-input>
+      </ion-item>
+      <ion-item id="crearCuenta-address">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Direccion" name="address_user" required=""></ion-input>
+      </ion-item>
+      <ion-item id="crearCuenta-age">
+        <ion-label></ion-label>
+        <ion-input type="number" placeholder="Edad" name="age" required=""></ion-input>
+      </ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-label>Rol</ion-label>
+          <ion-select [(ngModel)]="role" required="">
+            <ion-option value="1">Administrador</ion-option>
+            <ion-option value="2">Adulto</ion-option>
+            <ion-option value="3">Joven/Niños</ion-option>
+            </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-item id="crearCuenta-email" required="">
+        <ion-label></ion-label>
+        <ion-input type="email" placeholder="Correo" name="email_user" required=""></ion-input>
+      </ion-item>
+      <ion-item id="crearCuenta-password" required="">
+        <ion-label></ion-label>
+        <ion-input type="password" placeholder="Clave" name="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button id="crearCuenta-button3" ion-button color="leaf" block>
+      Registrarse
+    </button>
+  </form>
+</ion-content>

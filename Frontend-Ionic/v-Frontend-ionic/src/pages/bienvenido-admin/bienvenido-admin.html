@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons start>
+      <button ion-button icon-only solid>
+        <ion-icon name="people"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Bienvenido Admin
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page13">
+  <div style="width:100%;height:220px;margin:0px 0px;line-height:250px;background-color:#ffffff;text-align:center;">
+      <img src="assets/img/administrador-con-tuercas.svg" style="display:block;width:50%;height:50%;margin-left:auto;margin-right:auto;"/>
+  </div>
+    <div id="bienvenidoAdmin-container">
+    <div id="bienvenidoAdmin-container">
+      <button id="bienvenidoAdmin-button" ion-button color="dark" on-click="goToTipoMaterial()">
+        Tipos de Material
+      </button>
+      <button id="bienvenidoAdmin-button" ion-button color="leaf" on-click="goToMaterial()">
+        Material
+      </button>
+      <div class="spacer" style="width:300px;height:29px;" id="bienvenidoAdmin-spacer11"></div>
+    </div>
+    <div id="bienvenidoAdmin-container">
+      <button id="bienvenidoAdmin-button" ion-button color="dark" on-click="goToTipoMultimedia()">
+        Tipos de Multimedia
+      </button>
+      <button id="bienvenidoAdmin-button" ion-button color="leaf" on-click="goToMultimedia()">
+        Multimedia
+      </button>
+    </div>
+    <div id="bienvenidoAdmin-container">
+      <div class="spacer" style="width:300px;height:27px;" id="bienvenidoAdmin-spacer14"></div>
+      <button id="bienvenidoAdmin-button" ion-button color="dark" on-click="goToRolesDeUsuario()">
+        Roles
+      </button>
+      <button id="bienvenidoAdmin-button" ion-button color="leaf" on-click="goToUsuarios()">
+        Usuarios
+      </button>
+    </div>
+  </div>
+  <div class="spacer" style="width:300px;height:34px;" id="bienvenidoAdmin-spacer15"></div>
+  <button id="bienvenidoAdmin-button62" ion-button color="leaf" block on-click="goToSitiosDeAcopio()">
+    Centros de Reciclaje
+  </button>
+</ion-content>

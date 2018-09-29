@@ -1,0 +1,7 @@
+{
+  "name": "RR",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
